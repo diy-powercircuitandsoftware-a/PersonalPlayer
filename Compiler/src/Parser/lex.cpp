@@ -1,16 +1,15 @@
-#include "lex.h"
+#include "Lex.h"
 
-#include <stdbool.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
-lex::lex()
+
+Lex::Lex()
 {
     //ctor
 }
 
-lex::~lex()
+Lex::~Lex()
 {
     //dtor
 }
+void Lex::Analysis(string t){
 
+}

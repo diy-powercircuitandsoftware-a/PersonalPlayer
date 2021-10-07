@@ -1,13 +1,14 @@
 #ifndef LEX_H
 #define LEX_H
+#include <string>
+using namespace std;
 
-
-class lex
+class Lex
 {
     public:
-        lex();
-        virtual ~lex();
-
+        Lex();
+        virtual ~Lex();
+        void Analysis(string t);
     protected:
 
     private:

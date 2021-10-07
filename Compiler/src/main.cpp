@@ -3,9 +3,10 @@
 #include <string.h>
 #include <ctype.h>
 #include <fstream>
+#include <Lex.h>
 using namespace std;
 
-
+/*
 bool isPunctuator(char ch)					//check if the given character is a punctuator or not
 {
     return (ch == ' ' || ch == '+' || ch == '-' || ch == '*' ||
@@ -170,9 +171,8 @@ void parse(char* str)						//parse the expression
     }
     return;
 }
-
+*/
 int main(int argc, char **argv) {
-   char c[100] = "int m = n + 3p";
-    parse(c);
-    return 0;
+    Lex l();
+cout << l.Analysis("BMW") << "";
 }
