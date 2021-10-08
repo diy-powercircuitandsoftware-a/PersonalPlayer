@@ -18,18 +18,19 @@
 
 1633350557 d:\dev\diy\gameruntime\compiler\src\parser\lex.h
 
-1633614217 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
+1633662197 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
 	"Lex.h"
 
-1633614351 d:\dev\diy\personalplayer\compiler\src\parser\lex.h
-	<string>
+1633664837 d:\dev\diy\personalplayer\compiler\src\parser\lex.h
+	<iostream>
 
-1633439590 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
+1633662218 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	<fstream>
+	<Lex.h>
 
 1633603407 source:d:\dev\diy\personalplayer\compiler\src\parser\tokensvalidate.cpp
 	"TokensValidate.h"

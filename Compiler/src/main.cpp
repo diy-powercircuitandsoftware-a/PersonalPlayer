@@ -172,7 +172,11 @@ void parse(char* str)						//parse the expression
     return;
 }
 */
+
 int main(int argc, char **argv) {
-    Lex l();
-cout << l.Analysis("BMW") << "";
+  Lex myObj;
+
+ cout << myObj.Analysis("resre");
+
+  return 0;
 }
