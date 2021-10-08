@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include <fstream>
 #include <Lex.h>
+#include <Tokens.h>
 using namespace std;
 
 /*
@@ -176,7 +177,7 @@ void parse(char* str)						//parse the expression
 int main(int argc, char **argv) {
   Lex myObj;
 
- cout << myObj.Analysis("resre");
+  cout << myObj.Analysis("tttt");
 
   return 0;
 }

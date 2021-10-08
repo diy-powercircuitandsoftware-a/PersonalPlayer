@@ -18,27 +18,34 @@
 
 1633350557 d:\dev\diy\gameruntime\compiler\src\parser\lex.h
 
-1633662197 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
+1633664904 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
 	"Lex.h"
 
-1633664837 d:\dev\diy\personalplayer\compiler\src\parser\lex.h
+1633677759 d:\dev\diy\personalplayer\compiler\src\parser\lex.h
 	<iostream>
 
-1633662218 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
+1633688268 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string.h>
 	<ctype.h>
 	<fstream>
 	<Lex.h>
+	<Tokens.h>
 
 1633603407 source:d:\dev\diy\personalplayer\compiler\src\parser\tokensvalidate.cpp
 	"TokensValidate.h"
 
 1633603407 d:\dev\diy\personalplayer\compiler\src\parser\tokensvalidate.h
 
-1633612900 source:d:\dev\diy\personalplayer\compiler\src\parser\tokens.cpp
+1633687517 source:d:\dev\diy\personalplayer\compiler\src\parser\tokens.cpp
 	"Tokens.h"
 
-1633614325 d:\dev\diy\personalplayer\compiler\src\parser\tokens.h
+1633688784 d:\dev\diy\personalplayer\compiler\src\parser\tokens.h
+	<iostream>
+
+1633688418 source:d:\dev\diy\personalplayer\compiler\src\parser\lexposition.cpp
+	"LexPosition.h"
+
+1633688718 d:\dev\diy\personalplayer\compiler\src\parser\lexposition.h
 
