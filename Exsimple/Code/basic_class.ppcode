@@ -19,16 +19,12 @@ return $input+"test";
 }
 
 void main(){
-windows.create();
-int $displayindex=0;
-windows.size($displayindex,800,600); //windows app,game rendermode and (output.print)
+int $displayindex=windows.create(800,600);//windows app,game rendermode and (output.print)
+int $displayindex=windows.create(null);// console,service,brackground app 
+ 
 test $t=new test();
 output.print($displayindex,$t.getstring("aaa")); output at sdl2+with gpu
 vm.exit();
 }
 
-void main(){
-test $t=new test();
-output.print($t.getstring("aaa")); output at commandline
-vm.exit();
-}
+ 

@@ -18,13 +18,14 @@
 
 1633350557 d:\dev\diy\gameruntime\compiler\src\parser\lex.h
 
-1633664904 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
+1633837978 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
 	"Lex.h"
 
-1633677759 d:\dev\diy\personalplayer\compiler\src\parser\lex.h
+1633773582 d:\dev\diy\personalplayer\compiler\src\parser\lex.h
 	<iostream>
+	<vector>
 
-1633688268 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
+1633837518 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
 	<iostream>
 	<stdlib.h>
 	<string.h>
@@ -41,7 +42,7 @@
 1633687517 source:d:\dev\diy\personalplayer\compiler\src\parser\tokens.cpp
 	"Tokens.h"
 
-1633688784 d:\dev\diy\personalplayer\compiler\src\parser\tokens.h
+1633788193 d:\dev\diy\personalplayer\compiler\src\parser\tokens.h
 	<iostream>
 
 1633688418 source:d:\dev\diy\personalplayer\compiler\src\parser\lexposition.cpp

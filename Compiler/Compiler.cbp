@@ -39,12 +39,8 @@
 		</Compiler>
 		<Unit filename="src/Parser/Lex.cpp" />
 		<Unit filename="src/Parser/Lex.h" />
-		<Unit filename="src/Parser/LexPosition.cpp" />
-		<Unit filename="src/Parser/LexPosition.h" />
 		<Unit filename="src/Parser/Tokens.cpp" />
 		<Unit filename="src/Parser/Tokens.h" />
-		<Unit filename="src/Parser/TokensValidate.cpp" />
-		<Unit filename="src/Parser/TokensValidate.h" />
 		<Unit filename="src/main.cpp" />
 		<Extensions />
 	</Project>

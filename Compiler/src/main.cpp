@@ -176,8 +176,8 @@ void parse(char* str)						//parse the expression
 
 int main(int argc, char **argv) {
   Lex myObj;
+  myObj.Analysis("aaa  \"ccc  ddd\"");
 
-  cout << myObj.Analysis("tttt");
 
   return 0;
 }
