@@ -1,5 +1,6 @@
 #include "Lex.h"
-
+#include "FindComment.h"
+#include "FindString.h"
 
 
 Lex::Lex()
@@ -16,86 +17,113 @@ Lex::~Lex()
 
 std::vector<LexPositionNode>Lex::Analysis(string tok_input)
 {
+    FindComment findcomment;
+    FindString findstring;
     tok_input=tok_input+"   ";
-    string tempstr="";
+    tok_input.erase(0, tok_input.find_first_not_of(' '));
 
-   std::cout<<tok_input+"\n\n\n\n";
-    bool quote=false;
-    bool comment=false;
+
+
     for (unsigned i=0; i<tok_input.length()-1; ++i)
     {
 
-        char charone= tok_input.at(i);
-        char nextcharone= tok_input.at(i+1);
-        bool isspace=(charone==' ');
-        bool isquote=(charone=='"');
-        bool iscommentopen=(charone=='/')&&(nextcharone=='*');
-        bool iscommentclose=(charone=='*')&&(nextcharone=='/');
 
-        if (iscommentopen&&comment==false)
+
+        if (int( tok_input.at(i)<32))
         {
-            comment=true;
             continue;
         }
-        if (iscommentclose&&comment)
+
+
+        if (findstring.Activate==false)
         {
-            comment=false;
+            findcomment.Analysis(tok_input.substr (i,2));
+            if (findcomment.Skip())
+            {
+                continue;
+            }
+        }
+
+        findstring.Analysis(tok_input.substr (i,1));
+        if (findstring.Skip)
+        {
+            continue;
+        }
+        if (findstring.Complete)
+        {
+            struct LexPositionNode pos;
+            pos.posstart=i;
+            pos.value= findstring.Text;
+            pos.tokentype="string";
+            this->lexnode.push_back(pos);
+            findstring.Text="";
+            findstring.Complete=false;
+        }
+
+
+        if (this->tokenclass.IsOperator(tok_input.substr (i,2)))
+        {
+            struct LexPositionNode pos;
+            pos.posstart=i;
+            pos.value=tok_input.substr (i,2);
+            pos.tokentype="operator";
+            this->lexnode.push_back(pos);
             i++;
             continue;
         }
-        if (comment)
+        if (this->tokenclass.IsOperator(tok_input.substr (i,1)))
         {
-            continue;
-        }
-
-        if (isquote&&quote==false)
-        {
-            tempstr=tempstr+charone;
-            quote=true;
-            continue;
-        }
-        else if (isquote&&quote==true)
-        {
-            tempstr=tempstr+charone;
-
-
-            quote=false;
             struct LexPositionNode pos;
             pos.posstart=i;
-            pos.value=tempstr;
-            pos.tokentype="string";
+            pos.value=tok_input.substr (i,1);
+            pos.tokentype="operator";
             this->lexnode.push_back(pos);
-
-            tempstr="";
-            continue;
-
-        }
-        if (quote==true)
-        {
-            tempstr=tempstr+charone;
             continue;
         }
-        if (isspace==false)
+        if (this->tokenclass.IsBrackets(tok_input.substr (i,1)))
         {
-            tempstr=tempstr+charone;
-        }
-        else if (isspace)
-        {
-            if (tempstr!=""){
             struct LexPositionNode pos;
             pos.posstart=i;
-            pos.value=tempstr;
-            pos.tokentype="test";
+            pos.value=tok_input.substr (i,1);
+            pos.tokentype="bracket";
             this->lexnode.push_back(pos);
-            }
-            tempstr="";
+            continue;
         }
+
+
+        /*
+
+
+
+
+         if (isspace==false)
+         {
+             tempstr=tempstr+stringone;
+
+         }
+         else if (isspace)
+         {
+             if (tempstr!="")
+             {
+                 struct LexPositionNode pos;
+                 pos.posstart=i;
+                 pos.value=tempstr;
+                 if (tempstr=="main")
+                 {
+                     pos.tokentype="program";
+                 }
+
+                 this->lexnode.push_back(pos);
+             }
+             tempstr="";
+         }*/
 
     }
 
+
     for (int i = 0; i <  this->lexnode.size(); i++)
     {
-        std::cout <<  this->lexnode.at(i).value << '\n';
+        std::cout <<  this->lexnode.at(i).value+" is "+this->lexnode.at(i).tokentype<< '\n';
     }
 
     return this->lexnode;
@@ -105,3 +133,6 @@ void Lex::Clear()
 {
     this->lexnode.clear();
 }
+
+
+

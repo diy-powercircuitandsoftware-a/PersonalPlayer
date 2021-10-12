@@ -18,7 +18,8 @@ return $input+"test";
 
 }
 
-void main(){
+main(...$args){
+int $displayindex=windows.create(Display.Full_Screen); //windows app,game rendermode and (output.print)
 int $displayindex=windows.create(800,600);//windows app,game rendermode and (output.print)
 int $displayindex=windows.create(null);// console,service,brackground app 
  

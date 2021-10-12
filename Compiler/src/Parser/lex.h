@@ -2,6 +2,7 @@
 #define LEX_H
 #include <iostream>
 #include <vector>
+#include<Tokens.h>
 using namespace std;
 struct LexPositionNode {
   int posstart;
@@ -20,7 +21,10 @@ class Lex
     protected:
 
     private:
+        Tokens tokenclass;
         std::vector<LexPositionNode> lexnode;
+       // string ReadNext(string s,)
+
 };
 
 #endif // LEX_H

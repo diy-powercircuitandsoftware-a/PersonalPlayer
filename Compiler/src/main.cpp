@@ -1,10 +1,11 @@
 #include <iostream>
 #include <stdlib.h>
-#include <string.h>
 #include <ctype.h>
 #include <fstream>
 #include <Lex.h>
 #include <Tokens.h>
+#include <string>
+
 using namespace std;
 
 /*
@@ -175,8 +176,18 @@ void parse(char* str)						//parse the expression
 */
 
 int main(int argc, char **argv) {
-  Lex myObj;
-  myObj.Analysis("aaa  \"ccc  ddd\"");
+    std::ifstream file("D:\\dev\\diy\\PersonalPlayer\\Exsimple\\Code\\test.ppcode");
+    string token="";
+if (file.is_open()) {
+    std::string line;
+    while (std::getline(file, line)) {
+         token=token+"\n"+line.c_str();
+    }
+    file.close();
+}
+
+  //Lex myObj;
+ //myObj.Analysis(token);
 
 
   return 0;

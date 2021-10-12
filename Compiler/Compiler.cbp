@@ -37,6 +37,12 @@
 		<Compiler>
 			<Add option="-Weverything" />
 		</Compiler>
+		<Unit filename="src/Parser/FindComment.cpp" />
+		<Unit filename="src/Parser/FindComment.h" />
+		<Unit filename="src/Parser/FindIdentifier.cpp" />
+		<Unit filename="src/Parser/FindIdentifier.h" />
+		<Unit filename="src/Parser/FindString.cpp" />
+		<Unit filename="src/Parser/FindString.h" />
 		<Unit filename="src/Parser/Lex.cpp" />
 		<Unit filename="src/Parser/Lex.h" />
 		<Unit filename="src/Parser/Tokens.cpp" />
