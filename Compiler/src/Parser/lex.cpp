@@ -20,19 +20,10 @@ std::vector<LexPositionNode>Lex::Analysis(string tok_input)
     FindComment findcomment;
     FindString findstring;
     tok_input=tok_input+"   ";
-    tok_input.erase(0, tok_input.find_first_not_of(' '));
-
 
 
     for (unsigned i=0; i<tok_input.length()-1; ++i)
     {
-
-
-
-        if (int( tok_input.at(i)<32))
-        {
-            continue;
-        }
 
 
         if (findstring.Activate==false)

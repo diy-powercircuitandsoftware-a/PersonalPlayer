@@ -18,7 +18,7 @@
 
 1633350557 d:\dev\diy\gameruntime\compiler\src\parser\lex.h
 
-1634043577 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
+1634089272 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
 	"Lex.h"
 	"FindComment.h"
 	"FindString.h"
@@ -28,10 +28,9 @@
 	<vector>
 	<Tokens.h>
 
-1634046046 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
+1634089201 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
 	<iostream>
 	<stdlib.h>
-	<string.h>
 	<ctype.h>
 	<fstream>
 	<Lex.h>

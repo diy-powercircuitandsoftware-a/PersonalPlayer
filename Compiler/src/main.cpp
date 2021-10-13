@@ -186,8 +186,8 @@ if (file.is_open()) {
     file.close();
 }
 
-  //Lex myObj;
- //myObj.Analysis(token);
+  Lex myObj;
+ myObj.Analysis(token);
 
 
   return 0;
