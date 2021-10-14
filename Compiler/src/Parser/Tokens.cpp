@@ -16,10 +16,19 @@ bool Tokens::IsBrackets(string s)
 }
 bool Tokens::IsFloat(string s)
 {
+    int dotcount=0;
     for (unsigned i=0; i<s.length(); ++i)
     {
+        string ssubstring=s.substr(i,1);
+        if (ssubstring==".")
+        {
+            dotcount++;
+        }
+        if (dotcount>1){
+            return false;
+        }
 
-        if (!(std::count(this->Float_Types.begin(), this->Float_Types.end(), s.substr(i,1))))
+        if (!(std::count(this->Float_Types.begin(), this->Float_Types.end(),ssubstring )))
         {
             return false;
         }

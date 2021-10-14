@@ -14,7 +14,7 @@ public:
                                    "double","float","int","long","short","string","ubyte","ufloat","uint","ulong",
                                    "ushort","var","catch","extends","finally","throw","throws","try","loadlib","oslib",
                                    "as","class","function","import","instanceof","new","private","public","return","super",
-                                   "this","void","asynchronous","synchronized","false","null","true","main"
+                                   "this","void","asynchronous","synchronized","false","null","true","main","sub"
                                   };
     vector<string> Operator_Types= {"!","!=","&&","--","<","<=","=","==",">",">=","%","++","||"};
     vector<string> Special_Types= {":",",",";" };
