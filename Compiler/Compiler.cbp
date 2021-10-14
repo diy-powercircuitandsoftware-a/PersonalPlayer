@@ -37,6 +37,8 @@
 		<Compiler>
 			<Add option="-Weverything" />
 		</Compiler>
+		<Unit filename="src/Parser/AST.cpp" />
+		<Unit filename="src/Parser/AST.hpp" />
 		<Unit filename="src/Parser/FindComment.cpp" />
 		<Unit filename="src/Parser/FindComment.hpp" />
 		<Unit filename="src/Parser/FindIdentifier.cpp" />

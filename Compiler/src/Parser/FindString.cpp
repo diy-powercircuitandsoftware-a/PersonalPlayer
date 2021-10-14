@@ -37,3 +37,8 @@ void FindString::Analysis(string tok_input)
         this->Skip=false;
     }
 }
+void FindString::Clear()
+{
+    this->Text="";
+    this->Complete=false;
+}

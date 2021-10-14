@@ -18,7 +18,7 @@
 
 1633350557 d:\dev\diy\gameruntime\compiler\src\parser\lex.h
 
-1634182728 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
+1634202253 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
 	"Lex.hpp"
 	"FindComment.hpp"
 	"FindIdentifier.hpp"
@@ -30,7 +30,7 @@
 	<vector>
 	<Tokens.h>
 
-1634095602 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
+1634201800 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
 	<iostream>
 	<stdlib.h>
 	<ctype.h>
@@ -44,7 +44,7 @@
 
 1633603407 d:\dev\diy\personalplayer\compiler\src\parser\tokensvalidate.h
 
-1634180203 source:d:\dev\diy\personalplayer\compiler\src\parser\tokens.cpp
+1634202209 source:d:\dev\diy\personalplayer\compiler\src\parser\tokens.cpp
 	"Tokens.hpp"
 
 1634043855 d:\dev\diy\personalplayer\compiler\src\parser\tokens.h
@@ -62,13 +62,13 @@
 1634031603 d:\dev\diy\personalplayer\compiler\src\parser\findcomment.h
 	<iostream>
 
-1634093551 source:d:\dev\diy\personalplayer\compiler\src\parser\findstring.cpp
+1634194967 source:d:\dev\diy\personalplayer\compiler\src\parser\findstring.cpp
 	"FindString.hpp"
 
 1634041288 d:\dev\diy\personalplayer\compiler\src\parser\findstring.h
 	<iostream>
 
-1634095018 source:d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.cpp
+1634194956 source:d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.cpp
 	"FindIdentifier.hpp"
 
 1634046132 d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.h
@@ -77,10 +77,10 @@
 1634031603 d:\dev\diy\personalplayer\compiler\src\parser\findcomment.hpp
 	<iostream>
 
-1634041288 d:\dev\diy\personalplayer\compiler\src\parser\findstring.hpp
+1634194744 d:\dev\diy\personalplayer\compiler\src\parser\findstring.hpp
 	<iostream>
 
-1634180316 d:\dev\diy\personalplayer\compiler\src\parser\tokens.hpp
+1634202324 d:\dev\diy\personalplayer\compiler\src\parser\tokens.hpp
 	<iostream>
 	<vector>
 
@@ -89,12 +89,19 @@
 	<vector>
 	<Tokens.hpp>
 
-1634046132 d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.hpp
+1634194736 d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.hpp
 	<iostream>
 
-1634182451 d:\dev\diy\personalplayer\compiler\src\parser\findtoken.hpp
+1634194744 d:\dev\diy\personalplayer\compiler\src\parser\findtoken.hpp
 	<iostream>
 
-1634182691 source:d:\dev\diy\personalplayer\compiler\src\parser\findtoken.cpp
+1634199655 source:d:\dev\diy\personalplayer\compiler\src\parser\findtoken.cpp
 	"FindToken.hpp"
+
+1634201955 source:d:\dev\diy\personalplayer\compiler\src\parser\ast.cpp
+	"AST.hpp"
+
+1634202147 d:\dev\diy\personalplayer\compiler\src\parser\ast.hpp
+	<iostream>
+	<vector>
 

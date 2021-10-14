@@ -2,7 +2,7 @@
 
 FindIdentifier::FindIdentifier()
 {
-  this->Complete=false;
+    this->Complete=false;
     this->Activate==false;
     this->Skip=false;
 }
@@ -34,4 +34,9 @@ void FindIdentifier::Analysis(string tok_input)
         this->Text= this->Text+tok_input;
     }
 
+}
+void FindIdentifier::Clear()
+{
+    this->Text="";
+    this->Complete=false;
 }

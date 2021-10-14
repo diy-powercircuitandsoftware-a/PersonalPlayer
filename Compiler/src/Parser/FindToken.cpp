@@ -22,18 +22,20 @@ void FindToken::Analysis(string tok_input)
         this->Skip=true;
 
     }
-    else  if (!isalnum(tok_input.at(0))&&this->Activate)
+    else  if (tok_input!="."&&!isalnum(tok_input.at(0))&&this->Activate)
     {
         this->Skip=false;
         this->Activate=false;
         this->Complete=true;
-
-
     }
     if (this->Activate)
     {
         this->Text= this->Text+tok_input;
-
     }
 
+}
+void FindToken::Clear()
+{
+    this->Text="";
+    this->Complete=false;
 }

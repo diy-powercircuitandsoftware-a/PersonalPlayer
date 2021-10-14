@@ -7,9 +7,9 @@
 			<Cursor1 position="242" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Parser\Lex.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Parser\FindToken.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="89" topLine="11" />
+			<Cursor1 position="570" topLine="17" />
 		</Cursor>
 	</File>
 	<File name="src\Parser\FindString.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
@@ -17,54 +17,59 @@
 			<Cursor1 position="134" topLine="0" />
 		</Cursor>
 	</File>
+	<File name="src\Parser\FindComment.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="146" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="src\Parser\FindToken.hpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="217" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Parser\Lex.hpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="89" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Parser\Tokens.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="662" topLine="21" />
+		</Cursor>
+	</File>
+	<File name="src\Parser\FindString.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="44" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="src\Parser\FindIdentifier.cpp" open="0" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="505" topLine="15" />
+		</Cursor>
+	</File>
 	<File name="src\Parser\FindIdentifier.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="184" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="src\Parser\FindToken.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="570" topLine="17" />
-		</Cursor>
-	</File>
-	<File name="src\Parser\FindString.hpp" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="44" topLine="0" />
-		</Cursor>
-	</File>
-	<File name="src\Parser\Lex.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2080" topLine="69" />
-		</Cursor>
-	</File>
-	<File name="src\Parser\FindIdentifier.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="505" topLine="15" />
-		</Cursor>
-	</File>
-	<File name="src\Parser\Tokens.cpp" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="376" topLine="0" />
-		</Cursor>
-	</File>
 	<File name="src\main.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="378" topLine="2" />
+			<Cursor1 position="2903" topLine="87" />
 		</Cursor>
 	</File>
-	<File name="src\Parser\FindToken.hpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Parser\Tokens.hpp" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="217" topLine="0" />
+			<Cursor1 position="111" topLine="5" />
 		</Cursor>
 	</File>
-	<File name="src\Parser\Tokens.hpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Parser\AST.hpp" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="1221" topLine="8" />
+			<Cursor1 position="53" topLine="5" />
 		</Cursor>
 	</File>
-	<File name="src\Parser\FindComment.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\Parser\Lex.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="2" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="146" topLine="21" />
+			<Cursor1 position="2050" topLine="75" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

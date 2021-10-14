@@ -49,8 +49,7 @@ std::vector<LexPositionNode>Lex::Analysis(string tok_input)
             pos.value= findstring.Text;
             pos.tokentype="string";
             this->lexnode.push_back(pos);
-            findstring.Text="";
-            findstring.Complete=false;
+            findstring.Clear();
         }
 
 
@@ -66,8 +65,8 @@ std::vector<LexPositionNode>Lex::Analysis(string tok_input)
             pos.value= findidentifier.Text;
             pos.tokentype="identifier";
             this->lexnode.push_back(pos);
-            findidentifier.Text="";
-            findidentifier.Complete=false;
+            findidentifier.Clear();
+
         }
 
         findtoken.Analysis(tok_input.substr (i,1));
@@ -77,13 +76,24 @@ std::vector<LexPositionNode>Lex::Analysis(string tok_input)
         }
         if (findtoken.Complete)
         {
-              struct LexPositionNode pos;
-              pos.posstart=i;
-              pos.value= findtoken.Text;
-              pos.tokentype="token";
-              this->lexnode.push_back(pos);
-               findtoken.Complete=false;
-              findtoken.Text="";
+            struct LexPositionNode pos;
+            pos.posstart=i;
+            pos.value= findtoken.Text;
+
+            if (this->tokenclass.IsFloat( pos.value))
+            {
+                pos.tokentype="constants";
+            }else  if (this->tokenclass.IsKeyword( pos.value))
+            {
+                pos.tokentype="keyword";
+            }
+            else
+            {
+                pos.tokentype="token"; //constants
+            }
+
+            this->lexnode.push_back(pos);
+            findtoken.Clear();
         }
 
 

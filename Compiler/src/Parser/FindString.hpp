@@ -9,6 +9,7 @@ public:
     FindString();
     virtual ~FindString();
     void Analysis(string tok_input);
+    void Clear();
     bool Activate;
     bool Skip;
     bool Complete;
