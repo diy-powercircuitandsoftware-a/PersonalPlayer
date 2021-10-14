@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <fstream>
-#include <Lex.h>
-#include <Tokens.h>
+#include <Lex.hpp>
+#include <Tokens.hpp>
 #include <string>
 
 using namespace std;
@@ -176,7 +176,7 @@ void parse(char* str)						//parse the expression
 */
 
 int main(int argc, char **argv) {
-    std::ifstream file("D:\\dev\\diy\\PersonalPlayer\\Exsimple\\Code\\test.ppcode");
+    std::ifstream file("D:\\dev\\diy\\PersonalPlayer\\Exsimple\\Code\\basic.ppcode");
     string token="";
 if (file.is_open()) {
     std::string line;

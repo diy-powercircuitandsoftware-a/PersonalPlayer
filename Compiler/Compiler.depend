@@ -18,23 +18,25 @@
 
 1633350557 d:\dev\diy\gameruntime\compiler\src\parser\lex.h
 
-1634089272 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
-	"Lex.h"
-	"FindComment.h"
-	"FindString.h"
+1634182728 source:d:\dev\diy\personalplayer\compiler\src\parser\lex.cpp
+	"Lex.hpp"
+	"FindComment.hpp"
+	"FindIdentifier.hpp"
+	"FindString.hpp"
+	"FindToken.hpp"
 
 1633960415 d:\dev\diy\personalplayer\compiler\src\parser\lex.h
 	<iostream>
 	<vector>
 	<Tokens.h>
 
-1634089201 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
+1634095602 source:d:\dev\diy\personalplayer\compiler\src\main.cpp
 	<iostream>
 	<stdlib.h>
 	<ctype.h>
 	<fstream>
-	<Lex.h>
-	<Tokens.h>
+	<Lex.hpp>
+	<Tokens.hpp>
 	<string>
 
 1633603407 source:d:\dev\diy\personalplayer\compiler\src\parser\tokensvalidate.cpp
@@ -42,8 +44,8 @@
 
 1633603407 d:\dev\diy\personalplayer\compiler\src\parser\tokensvalidate.h
 
-1633959289 source:d:\dev\diy\personalplayer\compiler\src\parser\tokens.cpp
-	"Tokens.h"
+1634180203 source:d:\dev\diy\personalplayer\compiler\src\parser\tokens.cpp
+	"Tokens.hpp"
 
 1634043855 d:\dev\diy\personalplayer\compiler\src\parser\tokens.h
 	<iostream>
@@ -54,21 +56,45 @@
 
 1633688718 d:\dev\diy\personalplayer\compiler\src\parser\lexposition.h
 
-1634039333 source:d:\dev\diy\personalplayer\compiler\src\parser\findcomment.cpp
-	"FindComment.h"
+1634093571 source:d:\dev\diy\personalplayer\compiler\src\parser\findcomment.cpp
+	"FindComment.hpp"
 
 1634031603 d:\dev\diy\personalplayer\compiler\src\parser\findcomment.h
 	<iostream>
 
-1634046065 source:d:\dev\diy\personalplayer\compiler\src\parser\findstring.cpp
-	"FindString.h"
+1634093551 source:d:\dev\diy\personalplayer\compiler\src\parser\findstring.cpp
+	"FindString.hpp"
 
 1634041288 d:\dev\diy\personalplayer\compiler\src\parser\findstring.h
 	<iostream>
 
-1634045997 source:d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.cpp
-	"FindIdentifier.h"
+1634095018 source:d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.cpp
+	"FindIdentifier.hpp"
 
 1634046132 d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.h
 	<iostream>
+
+1634031603 d:\dev\diy\personalplayer\compiler\src\parser\findcomment.hpp
+	<iostream>
+
+1634041288 d:\dev\diy\personalplayer\compiler\src\parser\findstring.hpp
+	<iostream>
+
+1634180316 d:\dev\diy\personalplayer\compiler\src\parser\tokens.hpp
+	<iostream>
+	<vector>
+
+1634093594 d:\dev\diy\personalplayer\compiler\src\parser\lex.hpp
+	<iostream>
+	<vector>
+	<Tokens.hpp>
+
+1634046132 d:\dev\diy\personalplayer\compiler\src\parser\findidentifier.hpp
+	<iostream>
+
+1634182451 d:\dev\diy\personalplayer\compiler\src\parser\findtoken.hpp
+	<iostream>
+
+1634182691 source:d:\dev\diy\personalplayer\compiler\src\parser\findtoken.cpp
+	"FindToken.hpp"
 

@@ -2,7 +2,7 @@
 #define LEX_H
 #include <iostream>
 #include <vector>
-#include<Tokens.h>
+#include<Tokens.hpp>
 using namespace std;
 struct LexPositionNode {
   int posstart;

@@ -1,39 +1,39 @@
-#include "FindString.hpp"
+#include "FindToken.hpp"
 
-FindString::FindString()
+FindToken::FindToken()
 {
     this->Complete=false;
     this->Activate==false;
     this->Skip=false;
 }
 
-FindString::~FindString()
+FindToken::~FindToken()
 {
     //dtor
 }
-void FindString::Analysis(string tok_input)
+void FindToken::Analysis(string tok_input)
 {
 
-    if (tok_input=="\"" &&    this->Activate==false)
+    if (isalnum(tok_input.at(0)) && this->Activate==false)
     {
         this->Text="";
         this->Complete=false;
         this->Activate=true;
         this->Skip=true;
-        return;
+
     }
-    else  if (tok_input=="\""&&this->Activate)
+    else  if (!isalnum(tok_input.at(0))&&this->Activate)
     {
+        this->Skip=false;
         this->Activate=false;
         this->Complete=true;
-        this->Skip=true;
-        return;
+
+
     }
     if (this->Activate)
     {
         this->Text= this->Text+tok_input;
+
     }
-    else{
-        this->Skip=false;
-    }
+
 }

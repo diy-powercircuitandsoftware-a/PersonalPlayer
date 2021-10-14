@@ -1,7 +1,8 @@
-main(...$args){
+main(string[] $args){
 string $s="this is a string";
-int $displayindex=windows.create(null);// console,service,brackground app 
-output.print($displayindex,$t.getstring("aaa")); output at sdl2+with gpu
+int $displayindex=windows.create(null); 
+float $x=5+3;
+output.print($displayindex,$t.getstring("aaa")); 
 vm.exit();
 }
 

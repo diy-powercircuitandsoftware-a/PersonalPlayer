@@ -1,4 +1,4 @@
-#include "FindIdentifier.h"
+#include "FindIdentifier.hpp"
 
 FindIdentifier::FindIdentifier()
 {
@@ -14,7 +14,7 @@ FindIdentifier::~FindIdentifier()
 void FindIdentifier::Analysis(string tok_input)
 {
 
-    if (tok_input=="$" &&    this->Activate==false)
+    if (tok_input=="$" &&  this->Activate==false)
     {
         this->Text="";
         this->Complete=false;
@@ -22,20 +22,16 @@ void FindIdentifier::Analysis(string tok_input)
         this->Skip=true;
         return;
     }
-    else  if ((tok_input==";"||tok_input=="=")&&this->Activate)
+    else  if (tok_input!="_"&&isalnum(tok_input.at(0))==false&&this->Activate)
     {
         this->Activate=false;
-        this->Skip=true;
         this->Complete=true;
-        this->Skip=true;
+        this->Skip=false;
         return;
     }
     if (this->Activate)
     {
         this->Text= this->Text+tok_input;
     }
-    else
-    {
-        this->Skip=false;
-    }
+
 }

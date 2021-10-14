@@ -1,4 +1,4 @@
-#include "Tokens.h"
+#include "Tokens.hpp"
 
 Tokens::Tokens()
 {
@@ -15,6 +15,9 @@ bool Tokens::IsBrackets(string s){
 }
 bool Tokens::IsOperator(string s){
     return (std::count(this->Operator_Types.begin(), this->Operator_Types.end(), s));
+}
+bool Tokens::IsSpecial(string s){
+    return (std::count(this->Special_Types.begin(), this->Special_Types.end(), s));
 }
 /*
 $identifier
