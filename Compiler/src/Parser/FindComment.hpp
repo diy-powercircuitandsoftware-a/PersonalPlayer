@@ -9,6 +9,7 @@ class FindComment
         FindComment();
         virtual ~FindComment();
         void Analysis(string tok_input);
+        string InsertLineComment(string s);
         bool Skip();
     protected:
 

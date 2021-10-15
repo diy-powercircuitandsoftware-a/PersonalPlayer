@@ -16,13 +16,18 @@ Lex::~Lex()
     //dtor
 }
 
-std::vector<LexPositionNode>Lex::Analysis(string tok_input)
+std::vector<LexPositionNode>Lex::Analysis( vector<string> v)
 {
     FindComment findcomment;
     FindIdentifier findidentifier;
     FindString findstring;
     FindToken findtoken;
-    //spilt newline and find // and insert commment
+    string tok_input;
+    for (string& vs : v)
+    {
+        tok_input=tok_input+findcomment.InsertLineComment(vs)+"\n";
+    }
+    std::cout<<tok_input;
     tok_input=tok_input+"   ";
 
 
@@ -83,7 +88,8 @@ std::vector<LexPositionNode>Lex::Analysis(string tok_input)
             if (this->tokenclass.IsFloat( pos.value))
             {
                 pos.tokentype="constants";
-            }else  if (this->tokenclass.IsKeyword( pos.value))
+            }
+            else  if (this->tokenclass.IsKeyword( pos.value))
             {
                 pos.tokentype="keyword";
             }
@@ -143,7 +149,7 @@ std::vector<LexPositionNode>Lex::Analysis(string tok_input)
 
     for (int i = 0; i <  this->lexnode.size(); i++)
     {
-        std::cout <<  this->lexnode.at(i).value+" is "+this->lexnode.at(i).tokentype<< '\n';
+        //  std::cout <<  this->lexnode.at(i).value+" is "+this->lexnode.at(i).tokentype<< '\n';
     }
 
     return this->lexnode;

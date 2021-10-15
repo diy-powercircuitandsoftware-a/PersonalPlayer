@@ -16,7 +16,7 @@ class Lex
     public:
         Lex();
         virtual ~Lex();
-        std::vector<LexPositionNode> Analysis(string tok_input);
+        std::vector<LexPositionNode> Analysis( vector<string> v);
         void Clear();
     protected:
 
